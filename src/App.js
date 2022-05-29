@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import LoginComponent from "./components/login/Login.component";
+import DashboardComponent from "./components/dashboard/Dashboard.component";
+import TicketComponent from "./components/Ticket/Ticket.component";
+import NavMenuComponent from "./components/NavMenu/NavMenu.component";
 
 function App() {
+  const [isSignedIn, setSignedIn] = useState(
+    localStorage.getItem("login") != null
+  );
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavMenuComponent isSignedIn={isSignedIn} setSignedIn={setSignedIn} />
+      <div className="nav_items">
+        <switch>
+          <Routes>
+            {!isSignedIn ? (
+              <Route
+                path="/"
+                exact
+                element={<LoginComponent setSignedIn={setSignedIn} />}
+              />
+            ) : (
+              <Route
+                path="/"
+                element={<DashboardComponent setSignedIn={setSignedIn} />}
+              />
+            )}
+            <Route exact path="/tickets" element={<TicketComponent />} />
+          </Routes>
+        </switch>
+      </div>
     </div>
   );
 }

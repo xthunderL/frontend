@@ -68,3 +68,35 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+    {
+        "detail":"Contact Email not Linked",
+        "name":"Tom Cruise",
+        "date":"May 26,2019",
+        "time":"6:30 PM",
+        "priority":"High",
+        "img":"./img/attractive-1869761_1920.jpg"
+    },
+    {
+        "detail":"Adding images to Featured Posts",
+        "name":"Matt Damon",
+        "date":"May 26,2019",
+        "time":"8:00 AM",
+        "priority":"Low",
+        "img":"./img/girl-2696947_1920.jpg"
+    },{
+        "detail":"When will I be charged this month?",
+        "name":"Robert Downey",
+        "date":"May 26,2019",
+        "time":"7:30 PM",
+        "priority":"High",
+        "img":"./img/girl-4000270_1920.jpg"
+    },
+    {
+        "detail":"Payment not going through",
+        "name":"Chistrain Bale",
+        "date":"May 25,2019",
+        "time":"5:00 PM",
+        "priority":"Normal",
+        "img":"./img/portrait-4597853_1920.jpg"
+    }

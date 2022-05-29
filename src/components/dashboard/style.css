@@ -1,0 +1,326 @@
+
+
+
+.main{
+    display: flex;
+    padding: 10px;
+    background-color: #F7F8FC;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+}
+.maincontent{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    padding: 23px;
+    font-size: 22px;
+    align-items: center;
+    
+}
+
+.maincontent .iconos{
+    display: flex;
+    width: 75%;
+    justify-content: flex-end;
+    border-right: 1px solid #DFE0EB;
+    align-items: center;
+}
+.maincontent .iconos a{
+    margin-right: 20px;
+}
+.maincontent .iconos a:last-child{
+    margin-right: 30px;
+}
+
+
+.maincontent #user-name{
+    margin-left: 28px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.maincontent #img-user{
+border-radius: 50%;
+padding: 1px;
+border: 1px solid #DFE0EB;
+margin-left:  20px;
+height: 40px;
+width: 40px;
+}
+.main .cajas{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    
+}
+.main .cajas div {
+    width: 258px;
+    height: 134px;
+    padding: 25px;
+    background-color: #FFFFFF;
+    margin-left: 50px;
+    border: 1px solid #DFE0EB;
+    border-radius: 8%;
+    
+}
+.main .cajas div a{
+    padding-top: 10px;
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    font-size: 18px;
+    color: #9FA2B4;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.main .cajas div #numero{
+    padding-top: 0px;
+    font-size: 35px;
+    color: black;
+}
+
+.main .cajas div:hover{
+    border: 1px solid #3751FF;
+    
+}
+.main .cajas div:hover a{
+    color: #3751FF;
+    
+}
+.main .cajas div:hover #numero{
+    color: #3751FF;
+    
+}
+
+
+
+
+.main .trends{
+    margin-left: 40px;
+    margin-top: 40px;
+    height: 500px;
+    width: 82%;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 1px solid #DFE0EB;
+    border-radius: 1%;
+    
+}
+
+.main .trends #today-trends{
+    padding: 25px;
+    border-right: 1px solid #DFE0EB;
+    width: 72%;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+.main .trends #statics{
+    font-size: 14px;
+    width: 28%;
+    color: #9FA2B4;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    
+}
+.main .trends p{
+    margin-top: 15px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    
+}
+.main .trends #statics aside{
+    border-bottom: 1px solid #DFE0EB;
+    padding: 6%;
+    align-self: start;
+}
+.main .trends #statics aside:last-child{
+    border-bottom: none;
+}
+
+#myChart{
+    display: flex;
+ 
+}
+
+.ticandtask{
+    
+    display: flex;
+    width: 82%;
+    height: 350px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+#groupsupport{
+    display: flex;
+    font-size: 12px;
+    margin-left: 30px;
+    margin-bottom: 27px;
+    color: rgba(128, 128, 128, 0.658);
+    
+}
+#groupsupport p{
+    margin-left: 2px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.ticandtask #ticket{
+    width:50% ;
+    background-color: #FFFFFF;
+    border: 1px solid #DFE0EB;
+    border-radius: 2%;
+    margin-right: 20px;
+}
+.ticandtask #ticket #unresolvedtickets{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 12px;
+}
+.ticandtask #ticket #unresolvedtickets a{
+    margin-top: 5px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #3751FF;
+    
+}
+
+ .data div{
+    display: flex;
+   border-bottom: 1.5px solid #DFE0EB;
+   justify-content: space-between;
+   padding: 20px;
+   font-size: 14px;
+}
+
+.data div p{
+    color: rgba(128, 128, 128, 0.849);
+}
+.data div:last-child{
+
+   border-bottom: none;
+}
+.ticandtask  #task{
+    width:50% ;
+    background-color: #FFFFFF;
+    border: 1px solid #DFE0EB;
+    border-radius: 2%;
+    margin-left: 20px;
+
+}
+.ticandtask #taskall{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 12px;
+}
+.ticandtask #taskall a{
+    margin-top: 5px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #3751FF;
+}
+.datatask div{
+    display: flex;
+   border-bottom: 1.5px solid #DFE0EB;
+   justify-content: space-between;
+   padding: 20px;
+   font-size: 14px;
+}
+
+.datatask div p{
+    color: rgba(128, 128, 128, 0.849);
+}
+.datatask div:last-child{
+
+   border-bottom: none;
+}
+.datatask #createtask{
+    color: rgba(128, 128, 128, 0.692);
+}
+.datatask #createtask a{
+    height: 19px;
+    width: 19px;
+    background-color: #F0F1F7;
+    border-radius: 33%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: #9FA2B4;
+    font-weight: bold;
+}
+.task .datatask input{
+    border-radius: 50%;
+}
+#chkbox{
+    border-bottom: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+#chkbox input{
+    margin-right: 20px;
+}
+.datatask  p{
+    background-color: green;
+    color: white;
+    border-radius: 15%;
+    font-size: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#urgent {
+    color: white;
+    background-color: #FEC400;
+}
+#pNew{
+    color: white;
+    background-color: #29CC97;
+}
+#pDefault{
+    color: #9FA2B4;
+    background-color: #F0F1F7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
